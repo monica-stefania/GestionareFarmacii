@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="305EF79A-78BD-6893-E67F-CCAEA3D61D7B" name="detalii_vanzari">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>877738C8-95E4-4FC2-5239-6EF48710E182</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cantitate" id="CA76741E-BA3B-711E-D944-4C4AFC1263C9">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>81671948-7EA3-62C7-23BD-D3B6741F986A</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>detalii_vanzari_cantitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_r" id="4ACB8F05-141F-8318-ECE5-1D5F10154F50">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>57383C29-9584-A810-A8E3-DFD929C2D8AB</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A81FD5A-73FE-4028-474F-9A241D2EE0D4" referredColumn="70B43CEC-9A37-7451-0FF6-E9FCBC622AE4"/>
+</associations>
+</Column>
+<Column name="id_v" id="6D0AFBAD-C5EE-2290-8DC8-8EF9C0AB8668">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>E4160F9C-8DBC-4AC2-636E-47635F98AF52</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B48B474A-74FA-6E5C-EE5A-318675716C5C" referredColumn="053AB7DF-425D-67C9-9DCE-CE983898A243"/>
+</associations>
+</Column>
+<Column name="id_p" id="4B7F8547-8D2B-AAD7-944E-511037FD6DFB">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>EFCBA545-AB3C-AAA8-D044-52944E521799</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0012510E-0659-CD55-9ABB-28C294EAE478" referredColumn="FACA5EEA-D957-36DC-9FBD-808CAB104C7B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="026D17C2-9012-EE0C-B752-8FB711CFE0EF" name="detalii_vanzari_PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>D7965D9D-876D-679F-77D4-8B74BD6F878C</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D0AFBAD-C5EE-2290-8DC8-8EF9C0AB8668"/>
+<colUsage columnID="4B7F8547-8D2B-AAD7-944E-511037FD6DFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9EC840F-B712-CBD9-B1FF-423D7E161DFD" name="produse_detalii_vanzari_fk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>CBC27225-3CD5-F259-3664-63173E63F70F</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B7F8547-8D2B-AAD7-944E-511037FD6DFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA907E5B-94F0-33AC-30DF-65B377C1F34C" name="retete_detalii_vanzari_fk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>A10894BD-DD14-BD0E-00F2-48CB42A568CD</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4ACB8F05-141F-8318-ECE5-1D5F10154F50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A527D7B-A93B-05A2-FC82-0E2E38F25120" name="vanzari_detalii_vanzari_fk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>0F70F7F1-7A75-80E7-6FC1-7BD06EFA5A10</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D0AFBAD-C5EE-2290-8DC8-8EF9C0AB8668"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

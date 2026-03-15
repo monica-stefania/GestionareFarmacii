@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="retete" directorySegmentName="seg_0" id="8A9FE392-22C1-BF88-189B-4F1B58AEC362">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_c" id="105776E8-07D5-BC03-BE10-0EB2B152A092">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_emitere" id="2F3F781F-B471-681D-F2E4-B12C9CC48928">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cod_unic" id="5D7027FF-ECAA-9733-77D0-441C32EECE82">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_r" id="70B43CEC-9A37-7451-0FF6-E9FCBC622AE4">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_expirare" id="715C78A8-C3E6-F169-4CE2-2166C58D6270">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_m" id="E7C398A7-1E70-2DAD-6275-025D2B20987D">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="clienti_retete_fk" id="4E262A6D-3C2E-DEFF-BE24-9DBDC7AEBA28">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="medici_retete_fk" id="5BAD0CC9-E6E7-5BEB-39B4-559CF191AE9E">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="retete_PK" id="B40EF995-4B30-E68E-3FD6-E72B3AB40DE5">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="retete_cod_unic_uk" id="49A21D16-F54B-2514-C728-2C3EDA604A72">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

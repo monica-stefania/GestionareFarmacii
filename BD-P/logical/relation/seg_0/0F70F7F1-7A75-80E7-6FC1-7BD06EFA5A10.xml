@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vanzari_detalii_vanzari_fk" directorySegmentName="seg_0" id="0F70F7F1-7A75-80E7-6FC1-7BD06EFA5A10">
+<createdBy>lucam</createdBy>
+<createdTime>2025-11-23 19:35:43 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<sourcePk>71A51109-D168-421B-2D70-49516B03EF3B</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>contine</nameOnSource>
+<nameOnTarget>apartine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>680D053F-443E-298D-C57F-168037052D85</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>877738C8-95E4-4FC2-5239-6EF48710E182</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

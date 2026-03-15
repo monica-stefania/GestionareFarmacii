@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="medici" directorySegmentName="seg_0" id="CD9D37A4-894A-8419-8A1F-94EAB91330B5">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="prenume" id="092354DB-C9CB-0F3B-8B78-7E8EF27F4595">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="specializare" id="10409A76-6377-0613-32A1-983C89035B29">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume" id="A5BF01A9-348D-87CB-1A1E-9893DDB4E049">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cod_parafa" id="D52DBEB6-43AA-0137-2473-63BE7D137443">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_m" id="E40E512C-6BBB-7CF1-6C07-726835AC21EC">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="medici_PK" id="C39153D4-DFB9-50C1-74EC-278FDAC3DAE1">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="medici_cod_parafa_uk" id="AE893A5E-D712-B3D7-0A3C-912B3EB07F8E">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

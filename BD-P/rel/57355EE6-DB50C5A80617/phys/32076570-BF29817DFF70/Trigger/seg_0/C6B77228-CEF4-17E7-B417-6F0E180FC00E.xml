@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_retete_data_expirare" directorySegmentName="seg_0" id="C6B77228-CEF4-17E7-B417-6F0E180FC00E">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:34:15 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.data_expirare <= SYSDATE )
+	THEN 
+		RAISE_APPLICATION_ERROR( -20001, 'Data invalida: ' || TO_CHAR( :new.data_expirare, 'DD.MM.YYYY HH24:MI:SS' ) || 'trebuie sa fie mai mare decat data curenta.');
+	END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>8A9FE392-22C1-BF88-189B-4F1B58AEC362</table>
+</TriggerOraclev10g>

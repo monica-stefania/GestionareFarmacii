@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7FB07D6C-608B-AB9C-6F23-87C969E89462" name="stocuri">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_f" id="1660E95A-15FD-F60A-8DA2-840BD1309BF8">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF0899C0-96B1-7D2A-A0F6-E8A341DC5244" referredColumn="612A7433-DD04-8A89-D159-BF514CEFFBC3"/>
+</associations>
+</Column>
+<Column name="id_p" id="9DFC7713-E93C-3831-BA5A-8385DCFE16A9">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C52C4733-2D49-E10F-C2EF-14455F1A3B41" referredColumn="FACA5EEA-D957-36DC-9FBD-808CAB104C7B"/>
+</associations>
+</Column>
+<Column name="cantitate" id="8A234605-480D-1B0E-2332-DE70E3704107">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>75253FF2-BA4F-4855-6596-F84126D7F4D6</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>stocuri_cantitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7019DC56-25A8-484E-3ED8-8E2747940484" name="stocuri_PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1660E95A-15FD-F60A-8DA2-840BD1309BF8"/>
+<colUsage columnID="9DFC7713-E93C-3831-BA5A-8385DCFE16A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="181D7FD5-A7E9-6990-FA41-63126E94A88B" name="stocuri_farmacii_FK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>D72FE5C1-48D3-9045-B6A4-5ACF4B4B29EC</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1660E95A-15FD-F60A-8DA2-840BD1309BF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91138176-A14C-53DA-0997-BB74081E4F99" name="stocuri_produse_FK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>D72FE5C1-48D3-9045-B6A4-5ACF4B4B29EC</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DFC7713-E93C-3831-BA5A-8385DCFE16A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

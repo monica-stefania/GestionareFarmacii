@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4619431E-D891-EBB9-2D49-5996891FA853" name="retete">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-16 10:34:12 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="57355EE6-D070-22AD-EB88-DB50C5A80617" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_r" id="372AAE4F-9F97-08B5-0FDE-04C80F1537D6">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-16 10:34:16 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="57355EE6-D070-22AD-EB88-DB50C5A80617" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_unic" id="5B76A7F4-175E-8010-F33A-121B966D6A73">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-20 16:46:15 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="57355EE6-D070-22AD-EB88-DB50C5A80617" value="true"/>
+</engineerTo>
+<constraintName>retete_cod_unic_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(cod_unic) &gt; 5"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_emitere" id="BC8B3800-BA70-0891-04FD-E3834028A41A">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-20 16:46:25 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="57355EE6-D070-22AD-EB88-DB50C5A80617" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_expirare" id="3881C2EE-4DAB-9065-ED81-D31A7030A19C">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:07:44 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="57355EE6-D070-22AD-EB88-DB50C5A80617" value="true"/>
+</engineerTo>
+<constraintName>retete_data_expirare_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="data_expirare &gt; data_emitere"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_m" id="2930AC11-687F-DE39-9BC1-483F6711A275">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-04 12:41:48 UTC</createdTime>
+<generatorID>53BCDA26-D4F4-39A6-578F-FFE3CFACD078</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="57355EE6-D070-22AD-EB88-DB50C5A80617" value="true"/>
+</engineerTo>
+<referedAttribute>52A5B0F0-0FF4-5C00-FDDD-873AF27FC95E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_c" id="DF33EC20-C8A8-60B3-1CDE-713BBD0133CA">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 11:58:05 UTC</createdTime>
+<generatorID>5F82F757-349B-ED3C-313D-0EA0A2919C48</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="57355EE6-D070-22AD-EB88-DB50C5A80617" value="true"/>
+</engineerTo>
+<referedAttribute>32620B80-6B8F-BD6F-6724-E62E9234C6FA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C31412A6-9D9D-77F1-1E11-DC85E0CBF6CB" name="retete PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:44:38 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="57355EE6-D070-22AD-EB88-DB50C5A80617" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>372AAE4F-9F97-08B5-0FDE-04C80F1537D6</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AF5537DB-0FC7-1056-BAB0-20411AECCCF5" name="retete_cod_unic_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 10:18:51 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="57355EE6-D070-22AD-EB88-DB50C5A80617" value="true"/>
+</engineerTo>
+<newElementsIDs>5B76A7F4-175E-8010-F33A-121B966D6A73</newElementsIDs>
+<usedAttributes>
+<attributeRef>5B76A7F4-175E-8010-F33A-121B966D6A73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

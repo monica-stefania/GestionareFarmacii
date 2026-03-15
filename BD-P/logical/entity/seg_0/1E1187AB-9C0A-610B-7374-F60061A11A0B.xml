@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E1187AB-9C0A-610B-7374-F60061A11A0B" name="prospecte">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:04:48 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="descriere" id="2A9F8D16-C0D4-9A39-756F-65CAAC28B927">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:04:56 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="producator" id="EEEDF519-0230-43C8-C483-0CC527BB4861">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:05:30 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_p" id="6D1C8BAA-7F58-29B7-0929-63DA3A3984CE">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:08:12 UTC</createdTime>
+<generatorID>34E7E838-A446-3636-F326-E4D9C7DC5B0E</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<referedAttribute>B5343169-D752-682D-FD41-78AFB85B053E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DBE4C09A-BDE6-6277-0C68-0A92FD4F01B9" containerWithKeyObject="8A9FE392-22C1-BF88-189B-4F1B58AEC362" localFKIndex="5BAD0CC9-E6E7-5BEB-39B4-559CF191AE9E" name="medici_retete_fk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>53BCDA26-D4F4-39A6-578F-FFE3CFACD078</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<referredTableLongName>medici</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CD9D37A4-894A-8419-8A1F-94EAB91330B5</referredTableID>
+<keyObject>C39153D4-DFB9-50C1-74EC-278FDAC3DAE1</keyObject>
+<referredKeyID>C39153D4-DFB9-50C1-74EC-278FDAC3DAE1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_m</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

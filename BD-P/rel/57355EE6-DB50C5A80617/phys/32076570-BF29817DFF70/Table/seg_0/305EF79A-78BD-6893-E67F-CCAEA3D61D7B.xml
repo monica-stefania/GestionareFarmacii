@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="detalii_vanzari" directorySegmentName="seg_0" id="305EF79A-78BD-6893-E67F-CCAEA3D61D7B">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_r" id="4ACB8F05-141F-8318-ECE5-1D5F10154F50">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_p" id="4B7F8547-8D2B-AAD7-944E-511037FD6DFB">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_v" id="6D0AFBAD-C5EE-2290-8DC8-8EF9C0AB8668">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cantitate" id="CA76741E-BA3B-711E-D944-4C4AFC1263C9">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="vanzari_detalii_vanzari_fk" id="0A527D7B-A93B-05A2-FC82-0E2E38F25120">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="produse_detalii_vanzari_fk" id="F9EC840F-B712-CBD9-B1FF-423D7E161DFD">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="retete_detalii_vanzari_fk" id="FA907E5B-94F0-33AC-30DF-65B377C1F34C">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="detalii_vanzari_PK" id="026D17C2-9012-EE0C-B752-8FB711CFE0EF">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

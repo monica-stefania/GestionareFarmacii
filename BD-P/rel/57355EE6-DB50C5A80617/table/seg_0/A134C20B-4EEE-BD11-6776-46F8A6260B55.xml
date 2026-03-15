@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A134C20B-4EEE-BD11-6776-46F8A6260B55" name="clienti">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>53B6AA17-18EB-E58C-9CAC-4EA0549DCDFF</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_c" id="17930971-31BD-1C7B-4287-B38435D8DF67">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>32620B80-6B8F-BD6F-6724-E62E9234C6FA</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>200</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>clienti_id_c_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>clienti_id_c_trg</autoIncrementTriggerName>
+</Column>
+<Column name="nume" id="1FE4F06E-A8A1-001E-B0DA-2F9D36E489BC">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>E9BB6A40-E48E-8C42-FC2F-F087D64C00DF</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>clienti_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume) &gt;= 3 and regexp_like(nume, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="22478B75-AE52-9D48-329C-FCBD218D54BD">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>1F04F68B-FB7E-B0D4-69AB-7518BD57A1D7</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>clienti_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume) &gt;= 3 and regexp_like(prenume, &apos;^[A-Za-z]+(-[A-Za-z]+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cnp" id="A9F2A3C9-C7A1-155D-E53C-E22133AAFDBF">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>E1C36746-1618-263D-2762-10D3E99F7CCF</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>clienti_cnp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(cnp, &apos;^[0-9]{13}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="EDE7E3F9-89B0-AD16-4A51-A9F151BA8243">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>96926824-33D8-0F3B-45AA-89622DA44C73</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>clienti_email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="9BF42A55-A3BF-0D33-AE7E-E2578C80E5BD">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>CEBD56F2-0FFC-7039-4198-B340B2634C69</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>clienti_telefon_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^[0-9]{10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E246E468-BBE0-21E8-D3B8-A08BACF9DFAE" name="clienti_PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>61210984-A4C7-8F6C-1268-9C888AECFE5B</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17930971-31BD-1C7B-4287-B38435D8DF67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="387CC896-3CEA-BC8A-413D-61F47E364154" name="clienti_cnp_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>E314CFB5-053E-AC80-B06F-982D93BE21C1</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9F2A3C9-C7A1-155D-E53C-E22133AAFDBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EBCA739-BAE1-B7FD-22AC-427CDFF5D6A9" name="clienti_telefon_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>BA6B5AE9-00DD-0BFA-8A73-FBFCDC124CE6</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BF42A55-A3BF-0D33-AE7E-E2578C80E5BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3BACFB8-7B93-99BD-E503-02F01CF7B50B" name="clienti_email_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>8109EA8F-9D67-DA46-E26F-6E43FE63BB5E</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDE7E3F9-89B0-AD16-4A51-A9F151BA8243"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="produse_prospecte_fk" directorySegmentName="seg_0" id="34E7E838-A446-3636-F326-E4D9C7DC5B0E">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:08:12 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<sourcePk>A42A38F8-BE41-A56E-2007-9E6CF59BC9BB</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>include</nameOnSource>
+<nameOnTarget>apartine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E8426A7D-8B3A-2272-8715-D8DE6F2E3847</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>1E1187AB-9C0A-610B-7374-F60061A11A0B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

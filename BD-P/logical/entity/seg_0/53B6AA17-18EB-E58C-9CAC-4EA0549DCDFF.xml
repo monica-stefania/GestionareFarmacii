@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="53B6AA17-18EB-E58C-9CAC-4EA0549DCDFF" name="clienti">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-20 17:27:34 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_c" id="32620B80-6B8F-BD6F-6724-E62E9234C6FA">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-20 17:27:40 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="E9BB6A40-E48E-8C42-FC2F-F087D64C00DF">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-20 17:27:54 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<constraintName>clienti_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume) &gt;= 3 and regexp_like(nume, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="1F04F68B-FB7E-B0D4-69AB-7518BD57A1D7">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-23 12:06:08 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<constraintName>clienti_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume) &gt;= 3 and regexp_like(prenume, &apos;^[A-Za-z]+(-[A-Za-z]+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cnp" id="E1C36746-1618-263D-2762-10D3E99F7CCF">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:06:16 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<constraintName>clienti_cnp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(cnp, &apos;^[0-9]{13}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="96926824-33D8-0F3B-45AA-89622DA44C73">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-23 12:06:24 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<constraintName>clienti_email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="CEBD56F2-0FFC-7039-4198-B340B2634C69">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-23 12:07:09 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<constraintName>clienti_telefon_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^[0-9]{10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="61210984-A4C7-8F6C-1268-9C888AECFE5B" name="clienti PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:37:18 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>32620B80-6B8F-BD6F-6724-E62E9234C6FA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E314CFB5-053E-AC80-B06F-982D93BE21C1" name="clienti_cnp_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 10:17:16 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="false"/>
+</engineerTo>
+<newElementsIDs>E1C36746-1618-263D-2762-10D3E99F7CCF</newElementsIDs>
+<usedAttributes>
+<attributeRef>E1C36746-1618-263D-2762-10D3E99F7CCF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BA6B5AE9-00DD-0BFA-8A73-FBFCDC124CE6" name="clienti_telefon_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-30 18:23:50 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="false"/>
+</engineerTo>
+<newElementsIDs>CEBD56F2-0FFC-7039-4198-B340B2634C69</newElementsIDs>
+<usedAttributes>
+<attributeRef>CEBD56F2-0FFC-7039-4198-B340B2634C69</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8109EA8F-9D67-DA46-E26F-6E43FE63BB5E" name="clienti_email_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-30 18:24:11 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="false"/>
+</engineerTo>
+<newElementsIDs>96926824-33D8-0F3B-45AA-89622DA44C73</newElementsIDs>
+<usedAttributes>
+<attributeRef>96926824-33D8-0F3B-45AA-89622DA44C73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

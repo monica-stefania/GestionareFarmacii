@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAA501B4-997A-5181-6755-E9E738127DBF" name="produse">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>E8426A7D-8B3A-2272-8715-D8DE6F2E3847</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_p" id="FACA5EEA-D957-36DC-9FBD-808CAB104C7B">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>B5343169-D752-682D-FD41-78AFB85B053E</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>300</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>produse_id_p_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>produse_id_p_trg</autoIncrementTriggerName>
+</Column>
+<Column name="denumire" id="E8BEADD3-4152-685B-A0C1-706C011D9614">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>661669CA-51B0-F4AA-6228-BB0EF772068D</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret" id="2E6DD30C-1AC9-5883-DD9F-C80D62D23714">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>A8376CAA-C489-9558-BF8A-006EA14FD7D2</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>produse_pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>10000</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="necesita_reteta" id="2DFAB46D-1C34-9B6F-1A6F-20918B3F6B7A">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>0F3D495F-C788-3F19-BE93-C97BE221DCE2</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>produse_necesita_reteta_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="DA" description=""/>
+<valueDef value="NU" description=""/>
+<valueDef value="da" description=""/>
+<valueDef value="nu" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_expirare" id="BBB10073-3AE9-DAEB-A0B5-2B92D926C4F4">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>C980E2C2-5DAA-ACD6-1906-94976FEA0E47</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="528BDC1D-EA94-E478-C883-E5E0C0A967CD" name="produse_PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>A42A38F8-BE41-A56E-2007-9E6CF59BC9BB</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FACA5EEA-D957-36DC-9FBD-808CAB104C7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

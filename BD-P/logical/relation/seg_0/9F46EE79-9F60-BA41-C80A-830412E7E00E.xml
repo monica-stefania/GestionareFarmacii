@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="clienti_vanzari_fk" directorySegmentName="seg_0" id="9F46EE79-9F60-BA41-C80A-830412E7E00E">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-30 13:07:43 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<sourcePk>61210984-A4C7-8F6C-1268-9C888AECFE5B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>efectueaza</nameOnSource>
+<nameOnTarget>efectuate de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>53B6AA17-18EB-E58C-9CAC-4EA0549DCDFF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>680D053F-443E-298D-C57F-168037052D85</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

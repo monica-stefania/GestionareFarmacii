@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD9D37A4-894A-8419-8A1F-94EAB91330B5" name="medici">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>33F36869-6FB6-538F-FAB6-3CDF81779D5B</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_m" id="E40E512C-6BBB-7CF1-6C07-726835AC21EC">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>52A5B0F0-0FF4-5C00-FDDD-873AF27FC95E</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>medici_id_m_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>medici_id_m_trg</autoIncrementTriggerName>
+</Column>
+<Column name="nume" id="A5BF01A9-348D-87CB-1A1E-9893DDB4E049">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>DF4BAC48-3A5F-2E76-2CA8-B027A6A3FFD2</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="092354DB-C9CB-0F3B-8B78-7E8EF27F4595">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>3141584F-35EB-0972-4AC1-F4BDB59008A7</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_parafa" id="D52DBEB6-43AA-0137-2473-63BE7D137443">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>B9745846-A814-92CA-7AD5-B7E372B7511F</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>medici_cod_parafa_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(cod_parafa, &apos;^[A-Za-z0-9]+$&apos;) and length(cod_parafa) = 6"/>
+</checkConstraint>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="specializare" id="10409A76-6377-0613-32A1-983C89035B29">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>DC40A347-5942-EE18-6AA1-ED164F899F64</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C39153D4-DFB9-50C1-74EC-278FDAC3DAE1" name="medici_PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>13C5BAF6-1056-BCB6-24A6-54EC7F71D431</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E40E512C-6BBB-7CF1-6C07-726835AC21EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE893A5E-D712-B3D7-0A3C-912B3EB07F8E" name="medici_cod_parafa_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>F9E1D0D4-CBF8-64CD-6E61-ED32FA579A9B</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D52DBEB6-43AA-0137-2473-63BE7D137443"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

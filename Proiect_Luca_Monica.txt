@@ -1,0 +1,21 @@
+Tema proiectului: Farmacii
+
+Descrierea proiectului (non-tehnica):
+	Am mai multe farmacii de unde pot achizitiona produse. Produsele sunt de 2 tipuri: cele cu reteta medicala si cele fara. Produsele cu reteta necesita aprobarea medicului, de aceea acestea trebuie sa fie introduse intr-o reteta medicala.
+ 	Fiecare produs are pretul sau care nu depaseste 10000 de lei. Fiecare produs are prospectul lui.
+	Fiecare farmacie are propriul stoc de produse. 
+	Vanzarea poate avea loc si fara o reteta medicala.
+	Clientul poate avea asociat mai multe retete medicala.
+	Pentru simplitate nu vor fi adaugate retururile, promotii, reduceri sau carduri de loialitate. 
+	
+Descriere tehnica:
+	- tabela farmacii
+	- tabela produse
+	- tabela prospecte
+	- tabela clienti
+	- tabela medici
+	- tabela retete 
+	- tabela vanzari
+	- tabela detalii_vanzari
+	- tabela intermediara stocuri, dintre tabelele produse si farmacii
+	- tabela intermediara detalii_reteta,dintre tabelele retete si produse

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="medici_retete_fk" directorySegmentName="seg_0" id="53BCDA26-D4F4-39A6-578F-FFE3CFACD078">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-30 13:04:25 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<sourcePk>13C5BAF6-1056-BCB6-24A6-54EC7F71D431</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>emite</nameOnSource>
+<nameOnTarget>emise de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>33F36869-6FB6-538F-FAB6-3CDF81779D5B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4619431E-D891-EBB9-2D49-5996891FA853</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

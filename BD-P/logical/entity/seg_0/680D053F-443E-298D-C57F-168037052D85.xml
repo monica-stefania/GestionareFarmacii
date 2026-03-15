@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="680D053F-443E-298D-C57F-168037052D85" name="vanzari">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-26 08:57:27 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_v" id="79C441A5-2F83-6C6B-FE18-A8E5B4EF8A9F">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-26 08:57:37 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_c" id="C912FD22-E12E-5454-5BA1-27217B599D46">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-30 13:07:43 UTC</createdTime>
+<generatorID>9F46EE79-9F60-BA41-C80A-830412E7E00E</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<referedAttribute>32620B80-6B8F-BD6F-6724-E62E9234C6FA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_f" id="C0A4F131-7C73-26AA-A3E3-30BC65391530">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-30 17:37:22 UTC</createdTime>
+<generatorID>2FEE0CB9-971A-ABBC-9CF2-828DAD22DE3F</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<referedAttribute>096B04E5-E322-B9D7-8275-C19ECB04D554</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_vanzare" id="3E3C4F6A-E8B7-439A-EAA8-EFABE5E203A7">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-26 08:58:38 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="71A51109-D168-421B-2D70-49516B03EF3B" name="vanzari PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-26 08:59:26 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>79C441A5-2F83-6C6B-FE18-A8E5B4EF8A9F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

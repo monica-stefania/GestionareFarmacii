@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C4674892-4ACE-E4AB-021A-DB1DBC0966FC" name="farmacii">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-16 09:37:47 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_f" id="096B04E5-E322-B9D7-8275-C19ECB04D554">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-16 09:38:06 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="denumire" id="2B12E321-5AE9-3858-D5D3-ED5E04151A35">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:34:09 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oras" id="C67B5369-6D17-E2F3-614D-5F8B8D7537A5">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-23 12:20:32 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="D8E30022-F065-CB9E-6BE3-293BDC3C4519">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-16 09:51:06 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="4E698F72-772E-D0DD-A8CF-D1AD3FD6C014">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-16 09:51:54 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<constraintName>farmacii_telefon_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^[0-9]{10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B84A7C9-7D61-C705-AD5C-1ED1DC667B42" name="farmacii PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:32:13 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>096B04E5-E322-B9D7-8275-C19ECB04D554</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="FCEEADB3-9E18-2A9A-C883-3812B2B90FBE" name="farmacii_telefon_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:13:26 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<newElementsIDs>4E698F72-772E-D0DD-A8CF-D1AD3FD6C014</newElementsIDs>
+<usedAttributes>
+<attributeRef>4E698F72-772E-D0DD-A8CF-D1AD3FD6C014</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="2FAEC65F-45F9-4995-098F-6C61B364D182" name="farmacii_oras_adresa_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:19:49 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<newElementsIDs>C67B5369-6D17-E2F3-614D-5F8B8D7537A5,D8E30022-F065-CB9E-6BE3-293BDC3C4519</newElementsIDs>
+<usedAttributes>
+<attributeRef>C67B5369-6D17-E2F3-614D-5F8B8D7537A5</attributeRef>
+<attributeRef>D8E30022-F065-CB9E-6BE3-293BDC3C4519</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

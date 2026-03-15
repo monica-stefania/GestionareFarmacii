@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19372611-8DBC-1197-2CCB-4F05129CD47E" name="detalii_retete">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_r" id="3383EB26-76E9-8FF9-9CA2-F5400E63A827">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5C2AC68-BC74-F3BD-4528-7644B4F9A6F9" referredColumn="70B43CEC-9A37-7451-0FF6-E9FCBC622AE4"/>
+</associations>
+</Column>
+<Column name="id_p" id="6B0A5517-4E39-C4D0-EF73-C977DFFA05FD">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24611F4E-FA05-DB18-91B7-FC6F032A7AD5" referredColumn="FACA5EEA-D957-36DC-9FBD-808CAB104C7B"/>
+</associations>
+</Column>
+<Column name="doza" id="0F983818-12C5-D23E-A8C2-FBCD023F0F09">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>1D901304-AB60-ACA3-E364-670BD0CEA4BC</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="cantitate" id="43040E75-0ECE-31B0-F5F8-01A779586A8F">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>54729FD8-C223-7855-0362-B9D2E1BFAFBB</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>detalii_retete_cantitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="mod_administrare" id="E12D8E20-AA45-1FB0-053D-2891EAAC4D19">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>0BCC8FC1-F7FB-EA6F-29DB-2A46AE9B9842</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1C54403-AB48-4A60-5621-33B7A2D060A2" name="detalii_retete_PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3383EB26-76E9-8FF9-9CA2-F5400E63A827"/>
+<colUsage columnID="6B0A5517-4E39-C4D0-EF73-C977DFFA05FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61F6FE86-E020-64BB-70F8-E3DDD955389A" name="detalii_retete_retete_FK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>0317DFEF-E4B7-7A83-EF5D-B5347E8593D2</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3383EB26-76E9-8FF9-9CA2-F5400E63A827"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4F0AD09-31B2-A872-C454-0B830E59BF3C" name="detalii_retete_produse_FK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>0317DFEF-E4B7-7A83-EF5D-B5347E8593D2</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B0A5517-4E39-C4D0-EF73-C977DFFA05FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

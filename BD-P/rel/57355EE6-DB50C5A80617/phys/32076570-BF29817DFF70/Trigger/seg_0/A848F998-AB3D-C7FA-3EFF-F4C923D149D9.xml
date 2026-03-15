@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_vanzari_data_vanzare" directorySegmentName="seg_0" id="A848F998-AB3D-C7FA-3EFF-F4C923D149D9">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:22 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.data_vanzare > SYSDATE )
+	THEN 
+		RAISE_APPLICATION_ERROR( -20001, 'Data invalida: ' || TO_CHAR( :new.data_vanzare, 'DD.MM.YYYY HH24:MI:SS' ) || 'trebuie sa fie mai mic decat data curenta.');
+	END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>63BEB171-84EB-ACB2-1F5F-3CD3E86CE8F7</table>
+</TriggerOraclev10g>

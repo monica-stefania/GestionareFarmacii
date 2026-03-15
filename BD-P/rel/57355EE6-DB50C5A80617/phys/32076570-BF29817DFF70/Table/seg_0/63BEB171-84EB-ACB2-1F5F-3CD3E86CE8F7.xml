@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="vanzari" directorySegmentName="seg_0" id="63BEB171-84EB-ACB2-1F5F-3CD3E86CE8F7">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_v" id="053AB7DF-425D-67C9-9DCE-CE983898A243">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_f" id="3CE2DDCC-22F6-1AA3-687A-9C73B0221974">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_vanzare" id="7BAC13FE-BD78-309F-7766-9329D31421C1">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_c" id="E244C10D-B677-8046-17DE-980ED6D6FB57">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="farmacii_vanzari_fk" id="174D3DAC-B365-C594-81A0-DE88640F9A6A">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="clienti_vanzari_fk" id="AF2E1FED-E422-ABAD-7DDE-5E0E37B8348A">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="vanzari_PK" id="366F011C-E927-AEBA-CE76-67169986E82D">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

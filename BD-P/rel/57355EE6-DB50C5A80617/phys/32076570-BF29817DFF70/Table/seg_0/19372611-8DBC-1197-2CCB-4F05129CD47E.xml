@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="detalii_retete" directorySegmentName="seg_0" id="19372611-8DBC-1197-2CCB-4F05129CD47E">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="doza" id="0F983818-12C5-D23E-A8C2-FBCD023F0F09">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="retete_id_r" id="3383EB26-76E9-8FF9-9CA2-F5400E63A827">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cantitate" id="43040E75-0ECE-31B0-F5F8-01A779586A8F">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="produse_id_p" id="6B0A5517-4E39-C4D0-EF73-C977DFFA05FD">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="mod_administrare" id="E12D8E20-AA45-1FB0-053D-2891EAAC4D19">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="detalii_retete_retete_FK" id="61F6FE86-E020-64BB-70F8-E3DDD955389A">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="detalii_retete_produse_FK" id="C4F0AD09-31B2-A872-C454-0B830E59BF3C">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="detalii_retete_PK" id="A1C54403-AB48-4A60-5621-33B7A2D060A2">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:32:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

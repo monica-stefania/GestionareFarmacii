@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="278E268C-C06D-DEA0-708F-08ECC527AAE6" name="farmacii">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>C4674892-4ACE-E4AB-021A-DB1DBC0966FC</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_f" id="612A7433-DD04-8A89-D159-BF514CEFFBC3">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>096B04E5-E322-B9D7-8275-C19ECB04D554</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>farmacii_id_f_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>farmacii_id_f_trg</autoIncrementTriggerName>
+</Column>
+<Column name="denumire" id="91A5087D-28EF-1301-B4AB-CC3C0E6137BC">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>2B12E321-5AE9-3858-D5D3-ED5E04151A35</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oras" id="93CF170A-794A-BEC9-219D-9D00FA130193">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>C67B5369-6D17-E2F3-614D-5F8B8D7537A5</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa" id="5A383205-AE56-2D12-583C-5C465B9045B8">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>D8E30022-F065-CB9E-6BE3-293BDC3C4519</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="2A4B1200-313D-3372-914A-3731F190D8FB">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>4E698F72-772E-D0DD-A8CF-D1AD3FD6C014</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>farmacii_telefon_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^[0-9]{10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CBC8ED70-1924-1F56-C720-E26C93D8EE5E" name="farmacii_PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>5B84A7C9-7D61-C705-AD5C-1ED1DC667B42</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="612A7433-DD04-8A89-D159-BF514CEFFBC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="041B9EC9-4F22-1D4D-82BC-78768C5C20EB" name="farmacii_telefon_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>FCEEADB3-9E18-2A9A-C883-3812B2B90FBE</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A4B1200-313D-3372-914A-3731F190D8FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A8F8BDF-7EBB-AE35-7F9D-8E7EFD75C764" name="farmacii_oras_adresa_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>2FAEC65F-45F9-4995-098F-6C61B364D182</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93CF170A-794A-BEC9-219D-9D00FA130193"/>
+<colUsage columnID="5A383205-AE56-2D12-583C-5C465B9045B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

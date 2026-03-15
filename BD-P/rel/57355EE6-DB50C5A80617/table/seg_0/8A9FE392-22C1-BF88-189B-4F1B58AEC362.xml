@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A9FE392-22C1-BF88-189B-4F1B58AEC362" name="retete">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>4619431E-D891-EBB9-2D49-5996891FA853</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_r" id="70B43CEC-9A37-7451-0FF6-E9FCBC622AE4">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>372AAE4F-9F97-08B5-0FDE-04C80F1537D6</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>400</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>retete_id_r_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>retete_id_r_trg</autoIncrementTriggerName>
+</Column>
+<Column name="id_m" id="E7C398A7-1E70-2DAD-6275-025D2B20987D">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>2930AC11-687F-DE39-9BC1-483F6711A275</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DBE4C09A-BDE6-6277-0C68-0A92FD4F01B9" referredColumn="E40E512C-6BBB-7CF1-6C07-726835AC21EC"/>
+</associations>
+</Column>
+<Column name="id_c" id="105776E8-07D5-BC03-BE10-0EB2B152A092">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>DF33EC20-C8A8-60B3-1CDE-713BBD0133CA</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="639115BE-8EC3-01F4-96FD-E37EDDAC0974" referredColumn="17930971-31BD-1C7B-4287-B38435D8DF67"/>
+</associations>
+</Column>
+<Column name="cod_unic" id="5D7027FF-ECAA-9733-77D0-441C32EECE82">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>5B76A7F4-175E-8010-F33A-121B966D6A73</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>retete_cod_unic_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(cod_unic) &gt; 5"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_emitere" id="2F3F781F-B471-681D-F2E4-B12C9CC48928">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>BC8B3800-BA70-0891-04FD-E3834028A41A</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_expirare" id="715C78A8-C3E6-F169-4CE2-2166C58D6270">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>3881C2EE-4DAB-9065-ED81-D31A7030A19C</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<constraintName>retete_data_expirare_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="data_expirare &gt; data_emitere"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B40EF995-4B30-E68E-3FD6-E72B3AB40DE5" name="retete_PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>C31412A6-9D9D-77F1-1E11-DC85E0CBF6CB</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70B43CEC-9A37-7451-0FF6-E9FCBC622AE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49A21D16-F54B-2514-C728-2C3EDA604A72" name="retete_cod_unic_uk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>AF5537DB-0FC7-1056-BAB0-20411AECCCF5</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D7027FF-ECAA-9733-77D0-441C32EECE82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E262A6D-3C2E-DEFF-BE24-9DBDC7AEBA28" name="clienti_retete_fk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>5F82F757-349B-ED3C-313D-0EA0A2919C48</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="105776E8-07D5-BC03-BE10-0EB2B152A092"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BAD0CC9-E6E7-5BEB-39B4-559CF191AE9E" name="medici_retete_fk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>53BCDA26-D4F4-39A6-578F-FFE3CFACD078</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7C398A7-1E70-2DAD-6275-025D2B20987D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

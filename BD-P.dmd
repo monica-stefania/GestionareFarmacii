@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BD-P" id="51807487-A187-6B8F-2192-96FB751718B8" version="3.5">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-16 09:06:11 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>51807487-A187-6B8F-2192-96FB751718B8</designId>
+</OSDM_Design>

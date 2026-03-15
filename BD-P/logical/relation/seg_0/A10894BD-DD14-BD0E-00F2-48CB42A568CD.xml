@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="retete_detalii_vanzari_fk" directorySegmentName="seg_0" id="A10894BD-DD14-BD0E-00F2-48CB42A568CD">
+<createdBy>lucam</createdBy>
+<createdTime>2025-11-13 11:42:17 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<sourcePk>C31412A6-9D9D-77F1-1E11-DC85E0CBF6CB</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>apare </nameOnSource>
+<nameOnTarget>poate avea</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4619431E-D891-EBB9-2D49-5996891FA853</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>877738C8-95E4-4FC2-5239-6EF48710E182</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

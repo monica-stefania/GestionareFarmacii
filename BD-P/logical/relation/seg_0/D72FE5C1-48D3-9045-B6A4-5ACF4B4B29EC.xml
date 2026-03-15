@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="stocuri" directorySegmentName="seg_0" id="D72FE5C1-48D3-9045-B6A4-5ACF4B4B29EC">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:50:09 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>detine</nameOnSource>
+<nameOnTarget>se gasesc</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>C4674892-4ACE-E4AB-021A-DB1DBC0966FC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E8426A7D-8B3A-2272-8715-D8DE6F2E3847</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="cantitate" id="75253FF2-BA4F-4855-6596-F84126D7F4D6">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:51:28 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<constraintName>stocuri_cantitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

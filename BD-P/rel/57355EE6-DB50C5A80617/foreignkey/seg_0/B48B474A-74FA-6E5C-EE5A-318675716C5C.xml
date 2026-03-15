@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B48B474A-74FA-6E5C-EE5A-318675716C5C" containerWithKeyObject="305EF79A-78BD-6893-E67F-CCAEA3D61D7B" localFKIndex="0A527D7B-A93B-05A2-FC82-0E2E38F25120" name="vanzari_detalii_vanzari_fk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>0F70F7F1-7A75-80E7-6FC1-7BD06EFA5A10</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<referredTableLongName>vanzari</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>63BEB171-84EB-ACB2-1F5F-3CD3E86CE8F7</referredTableID>
+<keyObject>366F011C-E927-AEBA-CE76-67169986E82D</keyObject>
+<referredKeyID>366F011C-E927-AEBA-CE76-67169986E82D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_v</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

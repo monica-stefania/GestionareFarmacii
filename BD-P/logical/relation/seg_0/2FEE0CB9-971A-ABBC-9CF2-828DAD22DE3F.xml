@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="farmacii_vanzari_fk" directorySegmentName="seg_0" id="2FEE0CB9-971A-ABBC-9CF2-828DAD22DE3F">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-30 17:37:22 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<sourcePk>5B84A7C9-7D61-C705-AD5C-1ED1DC667B42</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>face</nameOnSource>
+<nameOnTarget>facuta de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C4674892-4ACE-E4AB-021A-DB1DBC0966FC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>680D053F-443E-298D-C57F-168037052D85</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

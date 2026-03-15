@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="detalii_retete" directorySegmentName="seg_0" id="0317DFEF-E4B7-7A83-EF5D-B5347E8593D2">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:52:19 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>contine</nameOnSource>
+<nameOnTarget>incluse in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>4619431E-D891-EBB9-2D49-5996891FA853</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E8426A7D-8B3A-2272-8715-D8DE6F2E3847</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="doza" id="1D901304-AB60-ACA3-E364-670BD0CEA4BC">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:53:00 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</attribute>
+<attribute name="cantitate" id="54729FD8-C223-7855-0362-B9D2E1BFAFBB">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:53:14 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<constraintName>detalii_retete_cantitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+</attribute>
+<attribute name="mod_administrare" id="0BCC8FC1-F7FB-EA6F-29DB-2A46AE9B9842">
+<createdBy>lucam</createdBy>
+<createdTime>2025-10-24 09:53:26 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

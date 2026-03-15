@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="877738C8-95E4-4FC2-5239-6EF48710E182" name="detalii_vanzari">
+<createdBy>lucam</createdBy>
+<createdTime>2025-11-13 11:40:25 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cantitate" id="81671948-7EA3-62C7-23BD-D3B6741F986A">
+<createdBy>lucam</createdBy>
+<createdTime>2025-11-13 11:40:38 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<constraintName>detalii_vanzari_cantitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_r" id="57383C29-9584-A810-A8E3-DFD929C2D8AB">
+<createdBy>lucam</createdBy>
+<createdTime>2025-11-13 11:42:17 UTC</createdTime>
+<generatorID>A10894BD-DD14-BD0E-00F2-48CB42A568CD</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>372AAE4F-9F97-08B5-0FDE-04C80F1537D6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_v" id="E4160F9C-8DBC-4AC2-636E-47635F98AF52">
+<createdBy>lucam</createdBy>
+<createdTime>2025-11-23 19:35:43 UTC</createdTime>
+<generatorID>0F70F7F1-7A75-80E7-6FC1-7BD06EFA5A10</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<referedAttribute>79C441A5-2F83-6C6B-FE18-A8E5B4EF8A9F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_p" id="EFCBA545-AB3C-AAA8-D044-52944E521799">
+<createdBy>lucam</createdBy>
+<createdTime>2025-11-23 19:36:30 UTC</createdTime>
+<generatorID>CBC27225-3CD5-F259-3664-63173E63F70F</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<referedAttribute>B5343169-D752-682D-FD41-78AFB85B053E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D7965D9D-876D-679F-77D4-8B74BD6F878C" name="detalii_vanzari PK">
+<createdBy>lucam</createdBy>
+<createdTime>2025-11-23 19:35:43 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<engineerTo>
+<item key="C086DD30-A946-F77C-B8C0-22FF4DB85670" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E4160F9C-8DBC-4AC2-636E-47635F98AF52</attributeRef>
+<attributeRef>EFCBA545-AB3C-AAA8-D044-52944E521799</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

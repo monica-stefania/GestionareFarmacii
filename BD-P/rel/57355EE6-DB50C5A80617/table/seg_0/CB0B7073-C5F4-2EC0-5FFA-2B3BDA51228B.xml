@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB0B7073-C5F4-2EC0-5FFA-2B3BDA51228B" name="prospecte">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>1E1187AB-9C0A-610B-7374-F60061A11A0B</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_p" id="42B55997-4CC8-CF75-2CBB-96E2608961D7">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>6D1C8BAA-7F58-29B7-0929-63DA3A3984CE</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27DC5BEB-7AD2-D60E-66C6-9EDF708F4EC9" referredColumn="FACA5EEA-D957-36DC-9FBD-808CAB104C7B"/>
+</associations>
+</Column>
+<Column name="descriere" id="33149A2B-94D6-B52E-2719-957B0EA0BE80">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>2A9F8D16-C0D4-9A39-756F-65CAAC28B927</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="producator" id="C9495D03-EC55-FBA8-2C46-50FAF1EBDA0C">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>EEEDF519-0230-43C8-C483-0CC527BB4861</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0D9CE9F-F621-04FF-0283-A98626476655" name="prospecte__IDX">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>34E7E838-A446-3636-F326-E4D9C7DC5B0E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="42B55997-4CC8-CF75-2CBB-96E2608961D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6A4D907-A7C1-760D-9B94-BBA709D7CFED" name="produse_prospecte_fk">
+<createdBy>lucam</createdBy>
+<createdTime>2025-12-07 12:23:58 UTC</createdTime>
+<generatorID>34E7E838-A446-3636-F326-E4D9C7DC5B0E</generatorID>
+<ownerDesignName>BD-P</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42B55997-4CC8-CF75-2CBB-96E2608961D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
